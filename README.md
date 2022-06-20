@@ -8,7 +8,7 @@
 
 使用bootstrap写的响应式购机商城
 
-在线演示：[https://source.imold.wang](https://source.imold.wang)
+在线演示：[https://bsshop.imold.wang](https://bsshop.imold.wang)
 
 <br />
 
