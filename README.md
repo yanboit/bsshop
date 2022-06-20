@@ -6,11 +6,11 @@
 
 ### 🙂🙂🙂项目介绍
 
-用bootstrap写的响应式购机商城
+使用bootstrap写的响应式购机商城
 
-在线演示：[https://bsshop.imold.wang](https://bsshop.imold.wang)
+在线演示：[https://source.imold.wang](https://source.imold.wang)
 
-
+<br />
 
 ### 👍👍👍项目特点
 
@@ -18,26 +18,18 @@
 - 多种网页动态效果，增强用户体验
 - 简洁清新的网页设置，赏心悦目
 
-
+<br />
 
 ### ✌️✌️✌️图片展示
 
-首页&商品页
+Navbar | 商品列表
+:-------------------------:|:-------------------------:
+![](https://up.imold.wang/myprojects/imgs/bsshop/1.png)  |  ![](https://up.imold.wang/myprojects/imgs/bsshop/2.png)
 
-<div style="display:flex">
-    <img src="https://up.imold.wang/myprojects/sourceshop/imgs/1.png" width="50%" height="auto" />
-    <img src="https://up.imold.wang/myprojects/sourceshop/imgs/2.png" width="50%" height="auto" />
-</div>
+登录页 | 注册页
+:-------------------------:|:-------------------------:
+![](https://up.imold.wang/myprojects/imgs/bsshop/5.png)  |  ![](https://up.imold.wang/myprojects/imgs/bsshop/6.png)
 
-
-登录页&注册页
-
-<div style="display:flex">
-    <img src="https://up.imold.wang/myprojects/sourceshop/imgs/3.png" width="50%" height="auto" />
-    <img src="https://up.imold.wang/myprojects/sourceshop/imgs/5.png" width="50%" height="auto" />
-</div>
-
-
-后台
-
-![](https://up.imold.wang/myprojects/sourceshop/imgs/6.png)
+页脚 | 个人中心
+:-------------------------:|:-------------------------:
+![](https://up.imold.wang/myprojects/imgs/bsshop/4.png)  |  ![](https://up.imold.wang/myprojects/imgs/bsshop/7.png)
