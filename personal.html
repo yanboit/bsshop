@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+		<meta charset="utf-8">
+		<title>个人资料</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="css/personal.css" />
+	</head>
+	<body>
+		<div class="container">
+			<!-- 相关操作 -->
+			<div class="btn-icon" onclick="makeOperation()">
+				<div class="btn-one"> </div>
+				<div class="btn-three"> </div>
+			</div>
+			<div class="test">
+				<div class="operation">
+					<div class="otn-option">
+						<ul>
+							<li> <span class="icon-one"></span> <a onclick="changeInfo()">修改资料</a> </li>
+							<li> <span class="icon-one"></span> <a href="">退出登陆</a> </li>
+							<li> <span class="icon-one"></span> <a href="">注销账号</a> </li>
+							<li> <span></span> <a href="">主题设置</a> </li>
+						</ul>
+					</div>
+				</div>
+			</div> <!-- 主要内容 -->
+			<div class="main">
+				<!-- 导航 -->
+				<div class="nav">
+					<ul>
+						<div class="logo"> <a class="logo" href="index.html"><img class="logo_icon" src="img/logome.png"></div> <a href="">
+							<li>回到首页</li>
+						</a>
+						<a href="">
+							<li>我的文章</li>
+						</a>
+					</ul>
+				</div> <!-- 个人资料 -->
+				<div class="info">
+					<div>
+						<div class="form">
+							<div class="bgImg"> </div>
+							<form action="/del" method="post">
+								<!-- 问候 -->
+								<div class="greet">
+									<p>下午好</p>
+								</div> <input type="hidden" value="id" />
+								<div class="input-group"> <span>账号<i>:</i></span>
+									<div class="none"></div> <input type="text" name="" id="" value="瓢额兮" readonly="true" />
+								</div>
+								<div class="input-group"> <span>密码<i>:</i></span>
+									<div class="none"></div> <input type="password" name="" id="" value="123456789" readonly="true" />
+								</div>
+								<div class="input-group"> <span>邮箱<i>:</i></span>
+									<div class="none"></div> <input type="email" name="" id="" value="admin@admin.com" readonly="true" />
+								</div>
+								<div class="input-group"> <span>电话<i>:</i></span>
+									<div class="none"></div> <input type="tel" name="" id="" value="110" readonly="true" />
+								</div>
+								<div class="input-group"> <span>生日<i>:</i></span>
+									<div class="none"></div> <input type="datetime-local" name="" id="" value="2021-1-1" readonly="true" />
+								</div>
+								<div class="input-group"> <span>头像<i>:</i></span>
+									<div class="none"></div> <input type="text" name="" id="" value="https://imold.wang" readonly="true" />
+								</div>
+								<div class="input-group radio"> <span>性别<i>:</i></span>
+									<div class="none"></div>
+									<div class="sex"> <input type="radio" name="gender" id="" value="" checked="checked" disabled="disabled" />
+										<label>男</label>
+										<input type="radio" name="gender" id="" value="" disabled="disabled" /> <label>女</label> </div>
+								</div>
+								<div class="input-group"> <input type="submit" class="sub" value="确认修改" disabled="disabled" /> </div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.bundle.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			var bgImg = document.getElementsByClassName("bgImg")[0];
+			var count = 0;
+			var form = document.getElementsByClassName("form")[0];
+			var test = document.getElementsByClassName("test")[0];
+
+			function bgView() {
+				if (test.classList.contains("testW") && (document.body.clientWidth <= 1006)) {
+					bgImg.classList.add("d-none");
+					form.style.borderRadius = ("10px");
+				} else {
+					bgImg.classList.remove("d-none");
+					form.style.borderRadius = ("15px");
+				}
+			}
+			window.onresize = function() {
+				if (test.classList.contains("testW") && (document.body.clientWidth <= 1006)) {
+					bgImg.classList.add("d-none");
+					form.style.borderRadius = ("10px");
+				} else {
+					bgImg.classList.remove("d-none");
+					form.style.borderRadius = ("15px");
+				}
+			}
+			document.getElementsByClassName("btn-icon")[0].addEventListener("click", function() {
+				bgView()
+			});
+
+			function makeOperation() {
+				var none = document.getElementsByClassName("none")[0];
+				var btn = document.getElementsByClassName("btn-icon")[0];
+				var test = document.getElementsByClassName("test")[0];
+				if ((count++) % 2 == 0) {
+					none.classList.add("w0");
+					btn.classList.add("clickBtnRotate");
+					test.classList.add("testW");
+				} else {
+					none.classList.remove("w0");
+					btn.classList.remove("clickBtnRotate");
+					test.classList.remove("testW");
+				}
+			}
+			// 修改资料
+			function changeInfo() {
+				var input = document.getElementsByTagName("input");
+				for (let i = 0; i < input.length; i++) {
+					input[i].removeAttribute("readonly");
+					input[i].removeAttribute("disabled");
+				}
+				alert("点击文字就可以修改了！")
+			}
+		</script>
+	</body>
+</html>

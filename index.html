@@ -1,0 +1,1360 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+		<title>臻机网</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+		<style type="text/css">
+			a {
+				text-decoration: none !important;
+				color: white;
+				font-size: 1em;
+			}
+
+			a:hover {
+				/* color: white !important; */
+			}
+
+			/* 顶部登录导航 */
+			.login_section {
+				/* height: 50px; */
+				width: 100%;
+				background-color: #b1101b;
+			}
+
+			.login_section .nav {
+				/* height: 50px; */
+				display: flex;
+				align-items: center;
+			}
+
+			.shop_car_icon {
+				display: block;
+				width: 30px;
+				height: 30px;
+				background: url(img/shopcaricon.png) no-repeat center center;
+				background-size: cover;
+			}
+
+			/* 顶部导航栏 */
+			.navbar_section {
+				width: 100%;
+				background: url(img/02.jpg) no-repeat center center;
+				background-size: cover;
+			}
+
+			.navbar-brand>img {
+				height: 50px !important;
+				margin-right: 20px;
+			}
+
+			.navbar_section a {
+				font-size: 1.2em;
+			}
+
+			.dropdown-menu>a {
+				font-size: 1.1em !important;
+			}
+
+			.dropdown-menu>a:last-child {
+				font-size: 1.05em !important;
+			}
+
+			.navbar {
+				background-color: rgba(255, 255, 255, 0.6) !important;
+			}
+
+			.navbar-brand {
+				font-size: 1.7em !important;
+				color: #c53156 !important;
+			}
+
+			.search {
+				font-size: 2em;
+			}
+
+			.search>input {
+				height: 40px;
+			}
+
+			/* 霸屏 */
+			.jumbotron {
+				background-color: rgba(255, 255, 255, 0.5) !important;
+				border-radius: 0 0 8px 8px;
+			}
+
+			/* 商品 */
+			.goods_section>.container-fluid {
+				padding-bottom: 20px !important;
+			}
+
+			.goods_card {
+				box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+				transition: all 0.3s linear;
+				position: relative;
+			}
+
+			.goods_card:hover {
+				transform: translateY(-5px);
+				box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+			}
+
+			/* 轮播 */
+			#carousel_hot {
+				border-radius: 6px;
+				overflow: hidden;
+				width: 100%;
+				height: 500px;
+			}
+
+			#carousel_hot .carousel_img01 {
+				height: 100%;
+				width: 100%;
+				background: url(img/p40bar.jpg) no-repeat center center;
+				background-size: cover;
+				border-radius: 4px;
+				overflow: hidden;
+			}
+
+			#carousel_hot .carousel_img02 {
+				height: 100%;
+				width: 100%;
+				background: url(img/mate30ebar.jpg) no-repeat center center;
+				background-size: cover;
+			}
+
+			#carousel_hot .carousel_img03 {
+				height: 100%;
+				width: 100%;
+				background: url(img/mate40probar.jpg) no-repeat center center;
+				background-size: cover;
+			}
+
+			#carousel_hot .carousel-item .carousel-caption {
+				bottom: 40px;
+			}
+
+			/* 工具栏 */
+			.toolbar {
+				width: 100%;
+			}
+
+			/* 商品卡片 */
+			.cards .card {
+				border: none;
+				border-radius: 0;
+			}
+
+			.goods_card {
+				border: 1px solid #CCC;
+				border-radius: 6px;
+				overflow: hidden;
+			}
+
+			/* 热卖商品 */
+			.hot_icon {
+				display: inline-block;
+				width: 30px;
+				height: 30px;
+				background: url(img/hoticon.png) no-repeat center center;
+				background-size: cover;
+			}
+
+			.hot_text {
+				font-size: 1.05em;
+			}
+
+			.media {
+				align-items: unset;
+				padding: 10px 15px;
+				border: 1px solid #CCC;
+				margin-bottom: 20px;
+				border-radius: 8px;
+			}
+
+			.last_media {
+				margin-bottom: 0px !important;
+			}
+
+			.media-img {
+				width: 37%;
+				border-radius: 4px;
+			}
+
+			.media_img01 {
+				background: url(img/p40.png) no-repeat center center;
+				background-size: cover;
+			}
+
+			.media_img02 {
+				background: url(img/mate30e.png) no-repeat center center;
+				background-size: cover;
+			}
+
+			.media_img03 {
+				background: url(img/mate40.png) no-repeat center center;
+				background-size: cover;
+			}
+
+			.media_img04 {
+				background: url(img/nove7pro.png) no-repeat center center;
+				background-size: cover;
+			}
+
+			.media_img05 {
+				background: url(img/p40.png) no-repeat center center;
+				background-size: cover;
+			}
+
+			.media_img06 {
+				background: url(img/s20.png) no-repeat center center;
+				background-size: cover;
+			}
+
+			.media_img07 {
+				background: url(img/s20fe.png) no-repeat center center;
+				background-size: cover;
+			}
+
+			.media_img08 {
+				background: url(img/zfold2.png) no-repeat center center;
+				background-size: cover;
+			}
+
+			.media_img09 {
+				background: url(img/pixel5.png) no-repeat center center;
+				background-size: cover;
+			}
+
+			.media_img10 {
+				background: url(img/pixel4a.png) no-repeat center center;
+				background-size: cover;
+			}
+
+			.media_img11 {
+				background: url(img/pixel4xl.png) no-repeat center center;
+				background-size: cover;
+			}
+
+			.toolbar>.row {
+				margin-bottom: 30px !important;
+			}
+
+			/* 新机发布 */
+			.new_phone_icon {
+				display: inline-block;
+				width: 30px;
+				height: 30px;
+				background: url(img/newicon.png) no-repeat center center;
+				background-size: cover;
+			}
+
+			.new_phone_text {
+				font-size: 1.05em;
+			}
+
+			video {
+				border: none;
+				outline: none;
+				border-radius: 6px;
+			}
+
+			/* 机型分类 */
+			.list-group-item {
+				border-top: 1px solid #CCC !important;
+			}
+
+			.catagory_icon {
+				display: inline-block;
+				width: 25px;
+				height: 25px;
+				background: url(img/catagory.png) no-repeat center center;
+				background-size: cover;
+			}
+
+			.catagory_text {
+				font-size: 1.05em;
+			}
+
+			.catagory_detail {
+				position: absolute;
+				width: 0;
+				height: 0;
+				background-color: #CCCCCC;
+				top: -2px;
+				right: 100%;
+				z-index: 9999999999999;
+				transition: all 0.2s linear;
+				overflow: hidden;
+			}
+
+			.catagory_list {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				padding: 40px 20px;
+			}
+
+			.catagory_list li {
+				list-style: none;
+			}
+
+			.catagory>.list-group>li:hover>.catagory_detail {
+				width: calc(200% + 108px);
+				height: auto;
+			}
+
+			.catagory_list h5 {
+				color: #2980b9
+			}
+
+			.catagory_list a {
+				color: #535c68
+			}
+
+			.badge-pill {
+				background-color: #b1101b;
+				color: white;
+			}
+
+			.catagory_more {
+				justify-content: flex-end !important;
+			}
+
+			/* 页脚 */
+			.footer_section {
+				width: 100%;
+			}
+
+			.footer_section h4 {
+				display: flex;
+				align-items: center;
+			}
+
+			.footer_nav_icon {
+				display: inline-block;
+				width: 30px;
+				height: 30px;
+				margin-right: 10px;
+			}
+
+			.footer_logo {
+				margin-top: -10px;
+			}
+
+			.buy_icon01 {
+				background: url(img/buyicon.png) no-repeat center center;
+				background-size: 96% 96%;
+			}
+
+			.buy_icon02 {
+				background: url(img/aftersale.png) no-repeat center center;
+				background-size: cover;
+			}
+
+			.buy_icon03 {
+				background: url(img/special.png) no-repeat center center;
+				background-size: 106% 106%;
+			}
+
+			.buy_icon04 {
+				background: url(img/pay.png) no-repeat center center;
+				background-size: 85% 85%;
+			}
+
+			.footer_info {
+				background-color: #b1101b;
+			}
+
+			@media only screen and (max-width:1100px) {
+				.media-img {
+					display: none;
+				}
+			}
+
+			@media only screen and (max-width:992px) {
+				.catagory_detail {
+					width: 100%;
+					height: 0;
+					top: 100%;
+					left: 0;
+				}
+
+				.media-img {
+					display: block;
+				}
+
+				.catagory>.list-group>li:hover>.catagory_detail {
+					width: 100%;
+					height: auto;
+				}
+			}
+
+			@media only screen and (max-width:576px) {
+				.goods_section>.container-fluid {
+					padding: 15px !important;
+				}
+
+				.footer_section>.container-fluid>.badge-light {
+					padding: 25px 15px !important;
+				}
+
+				.jumbotron>a {
+					padding: 5px 12px !important;
+				}
+
+				#carousel_hot {
+
+					height: 300px;
+				}
+
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 顶部登录 -->
+		<section class="login_section">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-12">
+						<nav class="nav float-right py-1">
+							<li class="nav-item"><a class="nav-link" href=""><span class="shop_car_icon"></span></a></li>
+							<li class="nav-item">
+								<a type="button" class="nav-link text-white" data-toggle="modal" data-target="#exampleModal">登陆</a>
+								<!-- 模态框 -->
+								<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+								  <div class="modal-dialog" role="document">
+								    <div class="modal-content">
+								      <div class="modal-header">
+								        <h5 class="modal-title" id="exampleModalLabel">登陆</h5>
+								        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								          <span aria-hidden="true">&times;</span>
+								        </button>
+								      </div>
+								      <div class="modal-body">
+								        <form class="form-row" action="" method="">
+								        	<div class="col-8 offset-2">
+												<div class="row">
+													<div class="col-3 d-flex align-items-center">
+														<label class="m-0" for="username">账 号：</label>
+													</div>
+													<div class="col-9">
+														<input type="text" class="form-control" name="username" placeholder="请输入账号" />
+													</div>
+													<div class="col-3 d-flex align-items-center mt-3">
+														<label class="m-0" for="username">密码：</label>
+													</div>
+													<div class="col-9 mt-3">
+														<input type="password" class="form-control" name="password" placeholder="请输入密码" />
+													</div>
+												</div>
+											</div>
+								        </form>
+								      </div>
+								      <div class="modal-footer">
+								        <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+								        <button type="button" class="btn btn-primary">提交</button>
+								      </div>
+								    </div>
+								  </div>
+								</div>
+							</li>
+							<li class="nav-item"><a class="nav-link" href="register.html">注册</a></li>
+							<li class="nav-item"><a class="nav-link" href="personal.html">个人中心</a></li>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- 顶部导航栏 -->
+		<section class="navbar_section">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-12">
+						<!-- 导航栏 -->
+						<div class="row">
+							<div class="col-12">
+								<nav class="navbar py-4 mt-4 navbar-expand-lg navbar-light bg-light">
+									<a class="navbar-brand" href="#"><img src="img/logome.png"></a>
+									<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+									 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+										<span class="navbar-toggler-icon"></span>
+									</button>
+									<div class="collapse navbar-collapse" id="navbarSupportedContent">
+										<ul class="navbar-nav mr-auto">
+											<li class="nav-item active">
+												<a class="nav-link" href="#">首页 <span class="sr-only">(current)</span></a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="#">全部商品</a>
+											</li>
+											<li class="nav-item dropdown">
+												<a class="nav-link dropdown-toggle" href="#" id="phone_sort" role="button" data-toggle="dropdown"
+												 aria-haspopup="true" aria-expanded="false">
+													机型分类
+												</a>
+												<div class="dropdown-menu" aria-labelledby="phone_sort">
+													<a class="dropdown-item" href="#">华为</a>
+													<a class="dropdown-item" href="#">小米</a>
+													<a class="dropdown-item" href="#">三星</a>
+													<a class="dropdown-item" href="#">LG</a>
+													<a class="dropdown-item" href="#">谷歌</a>
+													<a class="dropdown-item" href="#">一加</a>
+													<div class="dropdown-divider"></div>
+													<a class="dropdown-item" href="#">查看更多</a>
+												</div>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="#">今日优惠</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="#">联系客服</a>
+											</li>
+										</ul>
+										<form class="form-inline my-2 my-lg-0">
+											<div class="input-group search">
+												<input class="form-control" type="search" placeholder="看你想看..." aria-label="Search">
+												<div class="input-group-append">
+													<button class="btn btn-outline-danger bg-danger text-white" type="submit">Search</button>
+												</div>
+											</div>
+										</form>
+									</div>
+								</nav>
+							</div>
+						</div>
+						<!-- 霸屏 -->
+						<div class="row">
+							<div class="col-12">
+								<div class="jumbotron">
+
+									<h1 class="display-4">臻选好机!</h1>
+									<p class="lead">既是好机，也是好机会，圣诞元旦欢乐购，全场优惠减不停，每日抢一折精品。</p>
+									<hr class="my-4">
+									<p>每日新品推荐，同步发售，问题专业人士回答一对一，提供专业服务，相关商品详细信息。</p>
+									<a class="btn btn-danger btn-md mt-2" href="#" role="button">了解更多</a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- 商品页面 -->
+		<section class="goods_section">
+			<div class="container-fluid p-5">
+				<div class="row">
+					<!-- 轮播 -->
+					<div class="col-lg-8 col-md-12">
+						<div class="row">
+							<div class="col-12">
+								<div id="carousel_hot" class="carousel slide" data-ride="carousel">
+									<ol class="carousel-indicators">
+										<li data-target="#carousel_hot" data-slide-to="0" class="active"></li>
+										<li data-target="#carousel_hot" data-slide-to="1"></li>
+										<li data-target="#carousel_hot" data-slide-to="2"></li>
+									</ol>
+									<div class="carousel-inner h-100">
+										<div class="carousel-item active h-100">
+											<div class="carousel_img01"></div>
+											<div class="carousel-caption d-none d-md-block">
+												<h5 class="text-info">HUAWEI P40 Pro 5G 全网通 8GB+256GB</h5>
+												<p class="text-info">麒麟990 5G SoC芯片 5000万超感知徕卡四摄 50倍数字变焦 全网通5G手机</p>
+											</div>
+										</div>
+										<div class="carousel-item h-100">
+											<div class="carousel_img02"></div>
+											<div class="carousel-caption d-none d-md-block">
+												<h5 class="text-info">HUAWEI Mate 30E Pro 5G 全网通 8GB+128GB</h5>
+												<p class="text-info">麒麟990E 5G旗舰SoC芯片，支持双模SA/NSA；超感光徕卡电影影像</p>
+											</div>
+										</div>
+										<div class="carousel-item h-100">
+											<div class="carousel_img03"></div>
+											<div class="carousel-caption d-none d-md-block">
+												<h5 class="text-info">HUAWEI Mate 40 Pro 5G 全网通 8GB+256GB</h5>
+												<p class="text-info">麒麟9000 5G SoC芯片 5000万超感知徕卡四摄 50倍数字变焦 全网通5G手机</p>
+											</div>
+										</div>
+									</div>
+									<a class="carousel-control-prev" href="#carousel_hot" role="button" data-slide="prev">
+										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+										<span class="sr-only">Previous</span>
+									</a>
+									<a class="carousel-control-next" href="#carousel_hot" role="button" data-slide="next">
+										<span class="carousel-control-next-icon" aria-hidden="true"></span>
+										<span class="sr-only">Next</span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="row py-4 cards">
+							<div class="card my-3 px-3 col-xl-4 col-lg-6 col-md-6 col-sm-12 border-0">
+								<div class="goods_card">
+									<img class="card-img-top" src="img/p40.png" alt="p40pro">
+									<div class="card-body">
+										<h5 class="card-title">HUAWEI P40 Pro 5G 全网通 8GB+256GB</h5>
+										<p class="card-text">麒麟990 5G SoC芯片 5000万超感知徕卡四摄 50倍数字变焦 全网通5G手机</p>
+									</div>
+									<div class="card-footer">
+										<span class="text-danger">$1999</span>
+									</div>
+								</div>
+							</div>
+							<div class="card my-3 px-3 col-xl-4 col-lg-6 col-md-6 col-sm-12 border-0">
+								<div class="goods_card">
+									<img class="card-img-top" src="img/mate30e.png" alt="mate30e">
+									<div class="card-body">
+										<h5 class="card-title">HUAWEI Mate 30E Pro 5G 全网通 8GB+128GB</h5>
+										<p class="card-text">
+											麒麟990E 5G旗舰SoC芯片，支持双模SA/NSA；超感光徕卡电影影像
+										</p>
+									</div>
+									<div class="card-footer">
+										<span class="text-danger">$1999</span>
+									</div>
+								</div>
+							</div>
+							<div class="card my-3 px-3 col-xl-4 col-lg-6 col-md-6 col-sm-12 border-0">
+								<div class="goods_card">
+									<img class="card-img-top" src="img/mate40.png" alt="mate40pro">
+									<div class="card-body">
+										<h5 class="card-title">HUAWEI Mate 40 Pro 5G 全网通 8GB+256GB</h5>
+										<p class="card-text">
+											麒麟9000 5G SoC芯片 5000万超感知徕卡四摄 50倍数字变焦 全网通5G手机
+										</p>
+									</div>
+									<div class="card-footer">
+										<span class="text-danger">$1999</span>
+									</div>
+								</div>
+							</div>
+							<div class="card my-3 px-3 col-xl-4 col-lg-6 col-md-6 col-sm-12 border-0">
+								<div class="goods_card">
+									<img class="card-img-top" src="img/nove7pro.png" alt="nove7pro">
+									<div class="card-body">
+										<h5 class="card-title">HUAWEI nova 7 Pro 5G（仲夏紫）</h5>
+										<p class="card-text">
+											前置3200万追焦双摄 50倍潜望式变焦四摄 麒麟985 5G SoC 8GB+256GB 全网通版
+										</p>
+									</div>
+									<div class="card-footer">
+										<span class="text-danger">$1999</span>
+									</div>
+								</div>
+							</div>
+							<div class="card my-3 px-3 col-xl-4 col-lg-6 col-md-6 col-sm-12 border-0">
+								<div class="goods_card">
+									<img class="card-img-top" src="img/s20.png" alt="s20ultra">
+									<div class="card-body">
+										<h5 class="card-title">Samsung/三星 Galaxy S20 Ultra SM-G9880</h5>
+										<p class="card-text">
+											Samsung/三星 Galaxy S20 Ultra SM-G9880
+										</p>
+									</div>
+									<div class="card-footer">
+										<span class="text-danger">$1999</span>
+									</div>
+								</div>
+							</div>
+							<div class="card my-3 px-3 col-xl-4 col-lg-6 col-md-6 col-sm-12 border-0">
+								<div class="goods_card">
+									<img class="card-img-top" src="img/s20fe.png" alt="s20fe">
+									<div class="card-body">
+										<h5 class="card-title">Samsung/三星 Galaxy S20 FE 5G SM-G7810</h5>
+										<p class="card-text">
+											全网通5G手机s20新品note10官方旗舰店,骁龙865,双模拍照手机120hz高刷新率
+										</p>
+									</div>
+									<div class="card-footer">
+										<span class="text-danger">$1999</span>
+									</div>
+								</div>
+							</div>
+							<div class="card my-3 px-3 col-xl-4 col-lg-6 col-md-6 col-sm-12 border-0">
+								<div class="goods_card">
+									<img class="card-img-top" src="img/zfold2.png" alt="zfold2">
+									<div class="card-body">
+										<h5 class="card-title">Samsung/三星Galaxy Z Fold2 5G SM-F9160</h5>
+										<p class="card-text">
+											折叠屏手机12+512GB骁龙865+ 5G旗舰智能官方120高刷新率，25W快速度充电
+										</p>
+									</div>
+									<div class="card-footer">
+										<span class="text-danger">$1999</span>
+									</div>
+								</div>
+							</div>
+							<div class="card my-3 px-3 col-xl-4 col-lg-6 col-md-6 col-sm-12 border-0">
+								<div class="goods_card">
+									<img class="card-img-top" src="img/pixel5.png" alt="pixel5">
+									<div class="card-body">
+										<h5 class="card-title">谷歌/Google Pixel 5/Pixel 5代 Pixel 5 5G</h5>
+										<p class="card-text">
+											全高清+分辨率的6英寸OLED屏幕90Hz刷新率，高通Snapdragon765G处理器
+										</p>
+									</div>
+									<div class="card-footer">
+										<span class="text-danger">$1999</span>
+									</div>
+								</div>
+							</div>
+							<div class="card my-3 px-3 col-xl-4 col-lg-6 col-md-6 col-sm-12 border-0">
+								<div class="goods_card">
+									<img class="card-img-top" src="img/pixel4a.png" alt="pixel4a">
+									<div class="card-body">
+										<h5 class="card-title">谷歌（Google）Pixel 4a 全高清智能手机 5.8英寸 6+128G</h5>
+										<p class="card-text">
+											Android10，夜视和人像模式拍照，24小时电池续航时间，高通骁龙730处理器
+										</p>
+									</div>
+									<div class="card-footer">
+										<span class="text-danger">$1999</span>
+									</div>
+								</div>
+							</div>
+							<div class="card my-3 px-3 col-xl-4 col-lg-6 col-md-6 col-sm-12 border-0">
+								<div class="goods_card">
+									<img class="card-img-top" src="img/pixel4xl.png" alt="pixel4xl">
+									<div class="card-body">
+										<h5 class="card-title">谷歌/Google Pixel4代 Pixel4XL 原生美版 骁龙855 2k分辨率</h5>
+										<p class="card-text">
+											855移动平台，配备6GBRAM以及64GB或128GB存储,加入Pixel Neural Core芯片
+										</p>
+									</div>
+									<div class="card-footer">
+										<span class="text-danger">$1999</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-12 toolbar">
+						<!-- 热卖 -->
+						<div class="row">
+							<div class="col-12">
+								<div class="card">
+									<div class="card-header d-flex align-items-center">
+										<span class="hot_icon mr-2"></span><span class="hot_text">热门手机</span>
+									</div>
+									<div class="card-body nav d-block">
+										<ul class="nav nav-pills nav-justified mt-2">
+											<li class="nav-item mb-4"><a href="#food" data-toggle="tab" class="text-dark nav-link active font-weight-bold">华为</a></li>
+											<li class="nav-item mb-4"><a href="#people" data-toggle="tab" class="text-dark nav-link font-weight-bold">三星</a></li>
+											<li class="nav-item mb-4"><a href="#life" data-toggle="tab" class="text-dark nav-link font-weight-bold">谷歌</a></li>
+										</ul>
+
+										<!-- 第2部分：选项卡面板 -->
+										<div class="tab-content">
+											<!-- 机型1 -->
+											<div class="tab-pane fade show active" id="food">
+												<div class="row">
+													<!-- 华为 -->
+													<div class="col-lg-12 col-md-6 col-sm-6">
+														<li class="nav_item">
+															<a class="nav_link text-dark" href="">
+																<div class="media">
+																	<div class="media-img media_img01 mr-3"></div>
+																	<div class="media-body">
+																		<h5 class="mt-0">HUAWEI P40 Pro 5G 全网通 8GB+256GB</h5>
+																		<p class="m-0"> 麒麟990 5G SoC芯片 5000万超感知徕卡四摄 50倍数字变焦 全网通5G手机</p>
+																	</div>
+																</div>
+															</a>
+														</li>
+													</div>
+													<div class="col-lg-12 col-md-6 col-sm-6">
+														<li class="nav_item">
+															<a class="nav_link text-dark" href="">
+																<div class="media">
+																	<div class="media-img media_img02 mr-3"></div>
+																	<div class="media-body">
+																		<h5 class="mt-0">HUAWEI Mate 30E Pro 5G 全网通 8GB+128GB</h5>
+																		<p class="m-0">麒麟990E 5G旗舰SoC芯片，支持双模SA/NSA；超感光徕卡电影影像</p>
+																	</div>
+																</div>
+															</a>
+														</li>
+													</div>
+													<div class="col-lg-12 col-md-6 col-sm-6">
+														<li class="nav_item">
+															<a class="nav_link text-dark" href="">
+																<div class="media">
+																	<div class="media-img media_img03 mr-3"></div>
+																	<div class="media-body">
+																		<h5 class="mt-0">HUAWEI Mate 40 Pro 5G 全网通 8GB+256GB</h5>
+																		<p class="m-0">麒麟9000 5G SoC芯片 5000万超感知徕卡四摄 50倍数字变焦 全网通5G手机</p>
+																	</div>
+																</div>
+															</a>
+														</li>
+													</div>
+													<div class="col-lg-12 col-md-6 col-sm-6">
+														<li class="nav_item">
+															<a class="nav_link text-dark" href="">
+																<div class="media">
+																	<div class="media-img media_img04 mr-3"></div>
+																	<div class="media-body">
+																		<h5 class="mt-0">HUAWEI nova 7 Pro 5G（仲夏紫）</h5>
+																		<p class="m-0">前置3200万追焦双摄 50倍潜望式变焦四摄 麒麟985 5G SoC 8GB+256GB 全网通版</p>
+																	</div>
+																</div>
+															</a>
+														</li>
+													</div>
+												</div>
+											</div>
+
+											<!-- 机型2 -->
+											<div class="tab-pane fade" id="people">
+												<div class="row">
+													<!-- 三星 -->
+													<div class="col-lg-12 col-md-6 col-sm-6">
+														<li class="nav_item">
+															<a class="nav_link text-dark" href="">
+																<div class="media">
+																	<div class="media-img media_img06 mr-3"></div>
+																	<div class="media-body">
+																		<h5 class="mt-0">Samsung/三星 Galaxy S20 Ultra SM-G9880</h5>
+																		<p class="m-0">骁龙865官方旗舰智能 5G双模拍照手机, 120Hz官方全面屏智能拍照5G双模手机</p>
+																	</div>
+																</div>
+															</a>
+														</li>
+													</div>
+													<div class="col-lg-12 col-md-6 col-sm-6">
+														<li class="nav_item">
+															<a class="nav_link text-dark" href="">
+																<div class="media">
+																	<div class="media-img media_img07 mr-3"></div>
+																	<div class="media-body">
+																		<h5 class="mt-0">Samsung/三星 Galaxy S20 FE 5G SM-G7810</h5>
+																		<p class="m-0">全网通5G手机s20新品note10官方旗舰店,骁龙865,双模拍照手机120hz高刷新率</p>
+																	</div>
+																</div>
+															</a>
+														</li>
+													</div>
+													<div class="col-lg-12 col-md-6 col-sm-6">
+														<li class="nav_item">
+															<a class="nav_link text-dark" href="">
+																<div class="media">
+																	<div class="media-img media_img08 mr-3"></div>
+																	<div class="media-body">
+																		<h5 class="mt-0">Samsung/三星Galaxy Z Fold2 5G SM-F9160</h5>
+																		<p class="m-0">折叠屏手机12+512GB骁龙865+ 5G旗舰智能官方120高刷新率，25W快速度充电</p>
+																	</div>
+																</div>
+															</a>
+														</li>
+													</div>
+												</div>
+											</div>
+
+											<!-- 机型3 -->
+											<div class="tab-pane fade" id="life">
+												<div class="row">
+													<!-- 谷歌 -->
+													<div class="col-lg-12 col-md-6 col-sm-6">
+														<li class="nav_item">
+															<a class="nav_link text-dark" href="">
+																<div class="media">
+																	<div class="media-img media_img09 mr-3"></div>
+																	<div class="media-body">
+																		<h5 class="mt-0">谷歌/Google Pixel 5/Pixel 5代 Pixel 5 5G</h5>
+																		<p class="m-0">全高清+分辨率的6英寸OLED屏幕90Hz刷新率，高通Snapdragon765G处理器</p>
+																	</div>
+																</div>
+															</a>
+														</li>
+													</div>
+													<div class="col-lg-12 col-md-6 col-sm-6">
+														<li class="nav_item">
+															<a class="nav_link text-dark" href="">
+																<div class="media">
+																	<div class="media-img media_img10 mr-3"></div>
+																	<div class="media-body">
+																		<h5 class="mt-0">谷歌（Google）Pixel 4a 全高清智能手机 5.8英寸 6+128G</h5>
+																		<p class="m-0">Android10，夜视和人像模式拍照，24小时电池续航时间，高通骁龙730处理器</p>
+																	</div>
+																</div>
+															</a>
+														</li>
+													</div>
+													<div class="col-lg-12 col-md-6 col-sm-6">
+														<li class="nav_item">
+															<a class="nav_link text-dark" href="">
+																<div class="media">
+																	<div class="media-img media_img11 mr-3"></div>
+																	<div class="media-body">
+																		<h5 class="mt-0">谷歌/Google Pixel4代 Pixel4XL 原生美版 骁龙855 2k分辨率</h5>
+																		<p class="m-0">855移动平台，配备6GBRAM以及64GB或128GB存储,加入Pixel Neural Core芯片</p>
+																	</div>
+																</div>
+															</a>
+														</li>
+													</div>
+
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="card-footer">
+										<span class="float-right">查看跟多</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- 新机发布 -->
+						<div class="row">
+							<div class="col-12">
+								<div class="card">
+									<div class="card-header d-flex align-items-center">
+										<span class="new_phone_icon mr-2"></span><span class="new_phone_text">新机发布</span>
+									</div>
+									<div class="card-body nav d-block">
+										<li class="nav_item">
+											<a class="nav_link text-dark" href="">
+												<div class="media d-block">
+													<div class="media-body">
+														<h5 class="mt-0">HUAWEI Mate 40 Pro 5G 全网通 8GB+256GB</h5>
+														<p class="m-0">麒麟9000 5G SoC芯片 5000万超感知徕卡四摄 50倍数字变焦 全网通5G手机</p>
+													</div>
+													<div class="new_phone mt-3">
+														<video src="video/mate40pro.mp4" controls="controls" width="100%" height="auto">
+
+														</video>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li class="nav_item">
+											<a class="nav_link text-dark" href="">
+												<div class="media d-block">
+													<div class="media-body">
+														<h5 class="mt-0">Samsung/三星 Galaxy S20 FE 5G SM-G7810</h5>
+														<p class="m-0">全网通5G手机s20新品note10官方旗舰店,骁龙865,双模拍照手机120hz高刷新率</p>
+													</div>
+													<div class="new_phone mt-3">
+														<video src="video/s20fe.mp4" controls="controls" width="100%" height="auto">
+
+														</video>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li class="nav_item">
+											<a class="nav_link text-dark" href="">
+												<div class="media d-block last_media">
+													<div class="media-body">
+														<h5 class="mt-0">谷歌/Google Pixel 5/Pixel 5代 Pixel 5 5G</h5>
+														<p class="m-0">全高清+分辨率的6英寸OLED屏幕90Hz刷新率，高通Snapdragon765G处理器</p>
+													</div>
+													<div class="new_phone mt-3">
+														<video src="video/pixel5.mp4" controls="controls" width="100%" height="auto">
+
+														</video>
+													</div>
+												</div>
+											</a>
+										</li>
+									</div>
+									<div class="card-footer">
+										<span class="float-right">查看跟多</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- 分类 -->
+						<div class="row">
+							<div class="col-12 catagory">
+								<div class="catagory_title mb-4 mt-2 d-flex align-items-center">
+									<span class="catagory_icon mr-2"></span><span class="catagory_text">机型分类</span>
+								</div>
+								<ul class="list-group">
+									<li class="border-0 list-group-item d-flex justify-content-between align-items-center">
+										华为
+										<span class="badge badge-pill">20</span>
+										<div class="catagory_detail">
+											<div class="row">
+												<div class="col-4">
+													<div class="catagory_list">
+														<h5 class="mr-auto">Mate系列</h5>
+														<ul class="mt-3">
+															<li><a href="">HUAWEI Mate 40 Pro</a></li>
+															<li class="mt-2"><a href="">HUAWEI Mate 40 RS保时捷设计</a></li>
+															<li class="mt-2"><a href="">HUAWEI Mate 40 Pro+</a></li>
+															<li class="mt-2"><a href="">HUAWEI Mate 40</a></li>
+															<li class="mt-2"><a href="">HUAWEI Mate 30E Pro</a></li>
+														</ul>
+													</div>
+												</div>
+												<div class="col-4">
+													<div class="catagory_list">
+														<h5 class="mr-auto">P系列</h5>
+														<ul class="mt-3">
+															<li><a href="">HUAWEI P40 Pro</a></li>
+															<li class="mt-2"><a href="">HUAWEI P40 Pro+</a></li>
+															<li class="mt-2"><a href="">HUAWEI P40</a></li>
+														</ul>
+													</div>
+												</div>
+												<div class="col-4">
+													<div class="catagory_list">
+														<h5 class="mr-auto">nova系列</h5>
+														<ul class="mt-3">
+															<li><a href="">HUAWEI nova 7 Pro 5G</a></li>
+															<li class="mt-2"><a href="">HUAWEI nova 7 5G</a></li>
+															<li class="mt-2"><a href="">HUAWEI nova 8 SE</a></li>
+															<li class="mt-2"><a href="">HUAWEI nova 7 SE 5G 活力版</a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+
+									</li>
+
+									<li class="border-0 list-group-item d-flex justify-content-between align-items-center">
+										三星
+										<span class="badge badge-pill">14</span>
+										<div class="catagory_detail">
+											<div class="row">
+												<div class="col-4">
+													<div class="catagory_list">
+														<h5 class="mr-auto">Mate系列</h5>
+														<ul class="mt-3">
+															<li><a href="">HUAWEI Mate 40 Pro</a></li>
+															<li class="mt-2"><a href="">HUAWEI Mate 40 RS保时捷设计</a></li>
+															<li class="mt-2"><a href="">HUAWEI Mate 40 Pro+</a></li>
+															<li class="mt-2"><a href="">HUAWEI Mate 40</a></li>
+															<li class="mt-2"><a href="">HUAWEI Mate 30E Pro</a></li>
+														</ul>
+													</div>
+												</div>
+												<div class="col-4">
+													<div class="catagory_list">
+														<h5 class="mr-auto">Mate系列</h5>
+														<ul class="mt-3">
+															<li><a href="">HUAWEI Mate 40 Pro</a></li>
+															<li class="mt-2"><a href="">HUAWEI Mate 40 RS保时捷设计</a></li>
+															<li class="mt-2"><a href="">HUAWEI Mate 40 Pro+</a></li>
+															<li class="mt-2"><a href="">HUAWEI Mate 40</a></li>
+															<li class="mt-2"><a href="">HUAWEI Mate 30E Pro</a></li>
+														</ul>
+													</div>
+												</div>
+												<div class="col-4">
+													<div class="catagory_list">
+														<h5 class="mr-auto">Mate系列</h5>
+														<ul class="mt-3">
+															<li><a href="">HUAWEI Mate 40 Pro</a></li>
+															<li class="mt-2"><a href="">HUAWEI Mate 40 RS保时捷设计</a></li>
+															<li class="mt-2"><a href="">HUAWEI Mate 40 Pro+</a></li>
+															<li class="mt-2"><a href="">HUAWEI Mate 40</a></li>
+															<li class="mt-2"><a href="">HUAWEI Mate 30E Pro</a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="border-0 list-group-item d-flex justify-content-between align-items-center">
+										Cras justo odio
+										<span class="badge badge-pill">19</span>
+										<div class="catagory_detail">
+											<div class="row">
+												<div class="col-4">
+													<div class="catagory_list">
+														<h5 class="mr-auto">Mate系列</h5>
+														<ul class="mt-3">
+															<li><a href="">HUAWEI Mate 40 Pro</a></li>
+															<li class="mt-2"><a href="">HUAWEI Mate 40 RS保时捷设计</a></li>
+															<li class="mt-2"><a href="">HUAWEI Mate 40 Pro+</a></li>
+															<li class="mt-2"><a href="">HUAWEI Mate 40</a></li>
+															<li class="mt-2"><a href="">HUAWEI Mate 30E Pro</a></li>
+														</ul>
+													</div>
+												</div>
+												<div class="col-4">
+													<div class="catagory_list">
+														<h5 class="mr-auto">Mate系列</h5>
+														<ul class="mt-3">
+															<li><a href="">HUAWEI Mate 40 Pro</a></li>
+															<li class="mt-2"><a href="">HUAWEI Mate 40 RS保时捷设计</a></li>
+															<li class="mt-2"><a href="">HUAWEI Mate 40 Pro+</a></li>
+															<li class="mt-2"><a href="">HUAWEI Mate 40</a></li>
+															<li class="mt-2"><a href="">HUAWEI Mate 30E Pro</a></li>
+														</ul>
+													</div>
+												</div>
+												<div class="col-4">
+													<div class="catagory_list">
+														<h5 class="mr-auto">Mate系列</h5>
+														<ul class="mt-3">
+															<li><a href="">HUAWEI Mate 40 Pro</a></li>
+															<li class="mt-2"><a href="">HUAWEI Mate 40 RS保时捷设计</a></li>
+															<li class="mt-2"><a href="">HUAWEI Mate 40 Pro+</a></li>
+															<li class="mt-2"><a href="">HUAWEI Mate 40</a></li>
+															<li class="mt-2"><a href="">HUAWEI Mate 30E Pro</a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="border-0 list-group-item d-flex justify-content-between align-items-center">
+										小米
+										<span class="badge badge-pill">10</span>
+										<div class="catagory_detail">
+											<div class="row">
+												<div class="col-4">
+													<div class="catagory_list">
+														<h5 class="mr-auto">Mate系列</h5>
+														<ul class="mt-3">
+															<li><a href="">HUAWEI Mate 40 Pro</a></li>
+															<li class="mt-2"><a href="">HUAWEI Mate 40 RS保时捷设计</a></li>
+															<li class="mt-2"><a href="">HUAWEI Mate 40 Pro+</a></li>
+															<li class="mt-2"><a href="">HUAWEI Mate 40</a></li>
+															<li class="mt-2"><a href="">HUAWEI Mate 30E Pro</a></li>
+														</ul>
+													</div>
+												</div>
+												<div class="col-4">
+													<div class="catagory_list">
+														<h5 class="mr-auto">Mate系列</h5>
+														<ul class="mt-3">
+															<li><a href="">HUAWEI Mate 40 Pro</a></li>
+															<li class="mt-2"><a href="">HUAWEI Mate 40 RS保时捷设计</a></li>
+															<li class="mt-2"><a href="">HUAWEI Mate 40 Pro+</a></li>
+															<li class="mt-2"><a href="">HUAWEI Mate 40</a></li>
+															<li class="mt-2"><a href="">HUAWEI Mate 30E Pro</a></li>
+														</ul>
+													</div>
+												</div>
+												<div class="col-4">
+													<div class="catagory_list">
+														<h5 class="mr-auto">Mate系列</h5>
+														<ul class="mt-3">
+															<li><a href="">HUAWEI Mate 40 Pro</a></li>
+															<li class="mt-2"><a href="">HUAWEI Mate 40 RS保时捷设计</a></li>
+															<li class="mt-2"><a href="">HUAWEI Mate 40 Pro+</a></li>
+															<li class="mt-2"><a href="">HUAWEI Mate 40</a></li>
+															<li class="mt-2"><a href="">HUAWEI Mate 30E Pro</a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="border-0 list-group-item d-flex justify-content-between align-items-center">
+										谷歌
+										<span class="badge badge-pill">21</span>
+										<div class="catagory_detail">
+											<div class="row">
+												<div class="col-4">
+													<div class="catagory_list">
+														<h5 class="mr-auto">Mate系列</h5>
+														<ul class="mt-3">
+															<li><a href="">HUAWEI Mate 40 Pro</a></li>
+															<li class="mt-2"><a href="">HUAWEI Mate 40 RS保时捷设计</a></li>
+															<li class="mt-2"><a href="">HUAWEI Mate 40 Pro+</a></li>
+															<li class="mt-2"><a href="">HUAWEI Mate 40</a></li>
+															<li class="mt-2"><a href="">HUAWEI Mate 30E Pro</a></li>
+														</ul>
+													</div>
+												</div>
+												<div class="col-4">
+													<div class="catagory_list">
+														<h5 class="mr-auto">Mate系列</h5>
+														<ul class="mt-3">
+															<li><a href="">HUAWEI Mate 40 Pro</a></li>
+															<li class="mt-2"><a href="">HUAWEI Mate 40 RS保时捷设计</a></li>
+															<li class="mt-2"><a href="">HUAWEI Mate 40 Pro+</a></li>
+															<li class="mt-2"><a href="">HUAWEI Mate 40</a></li>
+															<li class="mt-2"><a href="">HUAWEI Mate 30E Pro</a></li>
+														</ul>
+													</div>
+												</div>
+												<div class="col-4">
+													<div class="catagory_list">
+														<h5 class="mr-auto">Mate系列</h5>
+														<ul class="mt-3">
+															<li><a href="">HUAWEI Mate 40 Pro</a></li>
+															<li class="mt-2"><a href="">HUAWEI Mate 40 RS保时捷设计</a></li>
+															<li class="mt-2"><a href="">HUAWEI Mate 40 Pro+</a></li>
+															<li class="mt-2"><a href="">HUAWEI Mate 40</a></li>
+															<li class="mt-2"><a href="">HUAWEI Mate 30E Pro</a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="border-0 list-group-item d-flex justify-content-between align-items-center">
+										lg
+										<span class="badge badge-pill">16</span>
+										<div class="catagory_detail">
+											<div class="row">
+												<div class="col-4">
+													<div class="catagory_list">
+														<h5 class="mr-auto">Mate系列</h5>
+														<ul class="mt-3">
+															<li><a href="">HUAWEI Mate 40 Pro</a></li>
+															<li class="mt-2"><a href="">HUAWEI Mate 40 RS保时捷设计</a></li>
+															<li class="mt-2"><a href="">HUAWEI Mate 40 Pro+</a></li>
+															<li class="mt-2"><a href="">HUAWEI Mate 40</a></li>
+															<li class="mt-2"><a href="">HUAWEI Mate 30E Pro</a></li>
+														</ul>
+													</div>
+												</div>
+												<div class="col-4">
+													<div class="catagory_list">
+														<h5 class="mr-auto">Mate系列</h5>
+														<ul class="mt-3">
+															<li><a href="">HUAWEI Mate 40 Pro</a></li>
+															<li class="mt-2"><a href="">HUAWEI Mate 40 RS保时捷设计</a></li>
+															<li class="mt-2"><a href="">HUAWEI Mate 40 Pro+</a></li>
+															<li class="mt-2"><a href="">HUAWEI Mate 40</a></li>
+															<li class="mt-2"><a href="">HUAWEI Mate 30E Pro</a></li>
+														</ul>
+													</div>
+												</div>
+												<div class="col-4">
+													<div class="catagory_list">
+														<h5 class="mr-auto">Mate系列</h5>
+														<ul class="mt-3">
+															<li><a href="">HUAWEI Mate 40 Pro</a></li>
+															<li class="mt-2"><a href="">HUAWEI Mate 40 RS保时捷设计</a></li>
+															<li class="mt-2"><a href="">HUAWEI Mate 40 Pro+</a></li>
+															<li class="mt-2"><a href="">HUAWEI Mate 40</a></li>
+															<li class="mt-2"><a href="">HUAWEI Mate 30E Pro</a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="border-0 list-group-item d-flex justify-content-between align-items-center catagory_more">
+										<span class="catagory_more">查看更多</span>
+										<div class="catagory_detail">
+											<div class="row">
+												<div class="col-4">
+													<div class="catagory_list">
+														<h5 class="mr-auto">Mate系列</h5>
+														<ul class="mt-3">
+															<li><a href="">HUAWEI Mate 40 Pro</a></li>
+															<li class="mt-2"><a href="">HUAWEI Mate 40 RS保时捷设计</a></li>
+															<li class="mt-2"><a href="">HUAWEI Mate 40 Pro+</a></li>
+															<li class="mt-2"><a href="">HUAWEI Mate 40</a></li>
+															<li class="mt-2"><a href="">HUAWEI Mate 30E Pro</a></li>
+														</ul>
+													</div>
+												</div>
+												<div class="col-4">
+													<div class="catagory_list">
+														<h5 class="mr-auto">Mate系列</h5>
+														<ul class="mt-3">
+															<li><a href="">HUAWEI Mate 40 Pro</a></li>
+															<li class="mt-2"><a href="">HUAWEI Mate 40 RS保时捷设计</a></li>
+															<li class="mt-2"><a href="">HUAWEI Mate 40 Pro+</a></li>
+															<li class="mt-2"><a href="">HUAWEI Mate 40</a></li>
+															<li class="mt-2"><a href="">HUAWEI Mate 30E Pro</a></li>
+														</ul>
+													</div>
+												</div>
+												<div class="col-4">
+													<div class="catagory_list">
+														<h5 class="mr-auto">Mate系列</h5>
+														<ul class="mt-3">
+															<li><a href="">HUAWEI Mate 40 Pro</a></li>
+															<li class="mt-2"><a href="">HUAWEI Mate 40 RS保时捷设计</a></li>
+															<li class="mt-2"><a href="">HUAWEI Mate 40 Pro+</a></li>
+															<li class="mt-2"><a href="">HUAWEI Mate 40</a></li>
+															<li class="mt-2"><a href="">HUAWEI Mate 30E Pro</a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!-- 面包屑导航 -->
+						<div class="row">
+							<div class="col-12">
+								<nav aria-label="breadcrumb">
+								  <ol class="breadcrumb">
+								    <li class="breadcrumb-item"><a class="text-dark" href="#">首页</a></li>
+								    <li class="breadcrumb-item"><a class="text-dark" href="#">购物清单</a></li>
+								    <li class="breadcrumb-item"><a class="text-dark" href="#">最新活动</a></li>
+								    <li class="breadcrumb-item"><a class="text-dark" href="#">热门精品</a></li>
+								  </ol>
+								</nav>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- 页脚 -->
+		<section class="footer_section">
+			<div class="container-fluid">
+				<div class="row p-5 badge-light">
+					<div class="col-lg-3 col-md-12">
+						<img class="footer_logo" src="img/logome.png" height="55px">
+						<p class="mb-2 mt-3">臻选好机，每一部都是优品，追求完美</p>
+						<p class="mb-0">既是好机，也是好机会，圣诞元旦欢乐购，全场优惠减不停，每日抢一折精品</p>
+					</div>
+					<div class="col-lg-9 col-md-12">
+						<div class="row mt-4 mt-lg-0">
+							<div class="col-lg-3 col-md-4 col-sm-6 col-6">
+								<h4 class="mb-sm-3 mb-2"><span class="buy_icon01 footer_nav_icon"></span>购物指南</h4>
+								<p class="mb-0"><a class="text-dark" href="">购物流程</a></p>
+								<p class="mb-0"><a class="text-dark" href="">会员介绍</a></p>
+								<p class="mb-0"><a class="text-dark" href="">生活旅行</a></p>
+								<p class="mb-0"><a class="text-dark" href="">常见问题</a></p>
+							</div>
+							<div class="col-lg-3 col-md-4 col-sm-6 mt-0 mt-md-0 mt-lg-0 col-6">
+								<h4 class="mb-sm-3 mb-2"><span class="buy_icon02 footer_nav_icon"></span>售后服务</h4>
+								<p class="mb-0"><a class="text-dark" href="">售后政策</a></p>
+								<p class="mb-0"><a class="text-dark" href="">价格保护</a></p>
+								<p class="mb-0"><a class="text-dark" href="">退款说明</a></p>
+								<p class="mb-0"><a class="text-dark" href="">取消订单</a></p>
+							</div>
+							<div class="col-lg-3 col-md-4 col-sm-6 mt-4 mt-md-0 mt-lg-0 col-6">
+								<h4 class="mb-sm-3 mb-2"><span class="buy_icon03 footer_nav_icon"></span>特色服务</h4>
+								<p class="mb-0"><a class="text-dark" href="">DIY装机</a></p>
+								<p class="mb-0"><a class="text-dark" href="">臻选Z卡</a></p>
+								<p class="mb-0"><a class="text-dark" href="">臻选特价</a></p>
+								<p class="mb-0"><a class="text-dark" href="">夺宝活动</a></p>
+							</div>
+							<div class="col-lg-3 col-md-4 col-sm-6 mt-4 mt-lg-0 col-6">
+								<h4 class="mb-sm-3 mb-2"><span class="buy_icon04 footer_nav_icon"></span>支付方式</h4>
+								<p class="mb-0"><a class="text-dark" href="">货到付款</a></p>
+								<p class="mb-0"><a class="text-dark" href="">在线支付</a></p>
+								<p class="mb-0"><a class="text-dark" href="">分期付款</a></p>
+								<p class="mb-0"><a class="text-dark" href="">公司转账</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row footer_info">
+					<div class="col-12 d-flex align-items-center justify-content-center">
+						<small class="p-3 text-white">COPYRIGHT © 2020 <a class="text-primary" target="_blank" href="https://imold.wang">臻机网</a>.
+							ALL RIGHTS RESERVED.</small>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.bundle.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

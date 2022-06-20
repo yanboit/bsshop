@@ -1,0 +1,404 @@
+a {
+	text-decoration: none !important;
+	color: white;
+	font-size: 1em;
+}
+
+a:hover {
+	/* color: white !important; */
+}
+
+/* 顶部登录导航 */
+.login_section {
+	/* height: 50px; */
+	width: 100%;
+	background-color: #b1101b;
+}
+
+.login_section .nav {
+	/* height: 50px; */
+	display: flex;
+	align-items: center;
+}
+
+.shop_car_icon {
+	display: block;
+	width: 30px;
+	height: 30px;
+	background: url(../img/shopcaricon.png) no-repeat center center;
+	background-size: cover;
+}
+
+/* 顶部导航栏 */
+.navbar_section {
+	width: 100%;
+	background: url(../img/02.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+.navbar-brand>img {
+	height: 50px !important;
+	margin-right: 20px;
+}
+
+.navbar_section a {
+	font-size: 1.2em;
+}
+
+.dropdown-menu>a {
+	font-size: 1.1em !important;
+}
+
+.dropdown-menu>a:last-child {
+	font-size: 1.05em !important;
+}
+
+.navbar {
+	background-color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.navbar-brand {
+	font-size: 1.7em !important;
+	color: #c53156 !important;
+}
+
+.search {
+	font-size: 2em;
+}
+
+.search>input {
+	height: 40px;
+}
+
+/* 霸屏 */
+.jumbotron {
+	background-color: rgba(255, 255, 255, 0.5) !important;
+	border-radius: 0 0 8px 8px;
+}
+
+/* 商品 */
+.goods_section>.container-fluid {
+	padding-bottom: 20px !important;
+}
+
+.goods_card {
+	box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+	transition: all 0.3s linear;
+	position: relative;
+}
+
+.goods_card:hover {
+	transform: translateY(-5px);
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+/* 轮播 */
+#carousel_hot {
+	border-radius: 6px;
+	overflow: hidden;
+	width: 100%;
+	height: 500px;
+}
+
+#carousel_hot .carousel_img01 {
+	height: 100%;
+	width: 100%;
+	background: url(../img/p40bar.jpg) no-repeat center center;
+	background-size: cover;
+	border-radius: 4px;
+	overflow: hidden;
+}
+
+#carousel_hot .carousel_img02 {
+	height: 100%;
+	width: 100%;
+	background: url(../img/mate30ebar.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+#carousel_hot .carousel_img03 {
+	height: 100%;
+	width: 100%;
+	background: url(../img/mate40probar.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+#carousel_hot .carousel-item .carousel-caption {
+	bottom: 40px;
+}
+
+/* 工具栏 */
+.toolbar {
+	width: 100%;
+}
+
+/* 商品卡片 */
+.cards .card {
+	border: none;
+	border-radius: 0;
+}
+
+.goods_card {
+	border: 1px solid #CCC;
+	border-radius: 6px;
+	overflow: hidden;
+}
+
+/* 热卖商品 */
+.hot_icon {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background: url(../img/hoticon.png) no-repeat center center;
+	background-size: cover;
+}
+
+.hot_text {
+	font-size: 1.05em;
+}
+
+.media {
+	align-items: unset;
+	padding: 10px 15px;
+	border: 1px solid #CCC;
+	margin-bottom: 20px;
+	border-radius: 8px;
+}
+
+.last_media {
+	margin-bottom: 0px !important;
+}
+
+.media-img {
+	width: 37%;
+	border-radius: 4px;
+}
+
+.media_img01 {
+	background: url(../img/p40.png) no-repeat center center;
+	background-size: cover;
+}
+
+.media_img02 {
+	background: url(../img/mate30e.png) no-repeat center center;
+	background-size: cover;
+}
+
+.media_img03 {
+	background: url(../img/mate40.png) no-repeat center center;
+	background-size: cover;
+}
+
+.media_img04 {
+	background: url(../img/nove7pro.png) no-repeat center center;
+	background-size: cover;
+}
+
+.media_img05 {
+	background: url(../img/p40.png) no-repeat center center;
+	background-size: cover;
+}
+
+.media_img06 {
+	background: url(../img/s20.png) no-repeat center center;
+	background-size: cover;
+}
+
+.media_img07 {
+	background: url(../img/s20fe.png) no-repeat center center;
+	background-size: cover;
+}
+
+.media_img08 {
+	background: url(../img/zfold2.png) no-repeat center center;
+	background-size: cover;
+}
+
+.media_img09 {
+	background: url(../img/pixel5.png) no-repeat center center;
+	background-size: cover;
+}
+
+.media_img10 {
+	background: url(../img/pixel4a.png) no-repeat center center;
+	background-size: cover;
+}
+
+.media_img11 {
+	background: url(../img/pixel4xl.png) no-repeat center center;
+	background-size: cover;
+}
+
+.toolbar>.row {
+	margin-bottom: 30px !important;
+}
+
+/* 新机发布 */
+.new_phone_icon {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background: url(../img/newicon.png) no-repeat center center;
+	background-size: cover;
+}
+
+.new_phone_text {
+	font-size: 1.05em;
+}
+
+video {
+	border: none;
+	outline: none;
+	border-radius: 6px;
+}
+
+/* 机型分类 */
+.list-group-item {
+	border-top: 1px solid #CCC !important;
+}
+
+.catagory_icon {
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	background: url(../img/catagory.png) no-repeat center center;
+	background-size: cover;
+}
+
+.catagory_text {
+	font-size: 1.05em;
+}
+
+.catagory_detail {
+	position: absolute;
+	width: 0;
+	height: 0;
+	background-color: #CCCCCC;
+	top: 0;
+	right: 100%;
+	z-index: 9999999999999;
+	transition: all 0.2s linear;
+	overflow: hidden;
+}
+
+.catagory_list {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 40px 20px;
+}
+
+.catagory_list li {
+	list-style: none;
+}
+
+.catagory>.list-group>li:hover>.catagory_detail {
+	width: calc(200% + 108px);
+	height: auto;
+}
+
+.catagory_list h5 {
+	color: #2980b9
+}
+
+.catagory_list a {
+	color: #535c68
+}
+
+.badge-pill {
+	background-color: #b1101b;
+	color: white;
+}
+
+.catagory_more {
+	justify-content: flex-end !important;
+}
+
+/* 页脚 */
+.footer_section {
+	width: 100%;
+}
+
+.footer_section h4 {
+	display: flex;
+	align-items: center;
+}
+
+.footer_nav_icon {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	margin-right: 10px;
+}
+
+.footer_logo {
+	margin-top: -10px;
+}
+
+.buy_icon01 {
+	background: url(../img/buyicon.png) no-repeat center center;
+	background-size: 96% 96%;
+}
+
+.buy_icon02 {
+	background: url(../img/aftersale.png) no-repeat center center;
+	background-size: cover;
+}
+
+.buy_icon03 {
+	background: url(../img/special.png) no-repeat center center;
+	background-size: 106% 106%;
+}
+
+.buy_icon04 {
+	background: url(../img/pay.png) no-repeat center center;
+	background-size: 85% 85%;
+}
+
+.footer_info {
+	background-color: #b1101b;
+}
+
+@media only screen and (max-width:1100px) {
+	.media-img {
+		display: none;
+	}
+}
+
+@media only screen and (max-width:992px) {
+	.catagory_detail {
+		width: 100%;
+		height: 0;
+		top: 100%;
+		left: 0;
+	}
+
+	.media-img {
+		display: block;
+	}
+
+	.catagory>.list-group>li:hover>.catagory_detail {
+		width: 100%;
+		height: auto;
+	}
+}
+
+@media only screen and (max-width:576px) {
+	.goods_section>.container-fluid {
+		padding: 15px !important;
+	}
+
+	.footer_section>.container-fluid>.badge-light {
+		padding: 25px 15px !important;
+	}
+
+	.jumbotron>a {
+		padding: 5px 12px !important;
+	}
+
+	#carousel_hot {
+
+		height: 300px;
+	}
+
+}
